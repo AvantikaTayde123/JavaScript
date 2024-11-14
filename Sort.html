@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[20,10,5,25,30,70,40,35];
+        let temp=0;
+        for(let i=0;i<arr.length;i++){
+            for(let j=i+1;j<arr.length;j++){
+                if(arr[i]>arr[j]){
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        } 
+        }
+        document.write("Sorted Array is: "+arr)
+        document.write("Second Minimum: "+arr[0]);
+        document.write("Second Maximum: "+arr[arr.length-2]);
+
+     </script>
+</body>
+</html>
