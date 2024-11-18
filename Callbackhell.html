@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test1(callback){
+           setTimeout(function(){
+            callback();
+           },2000);
+        }
+        function test2(callback){
+            setTimeout(function(){
+                callback();
+            },3000);
+        }
+
+        function test3(callback){
+            setTimeout(function(){
+                callback();
+            },3000);
+        }
+
+        test1(function(){
+            test2(function(){
+                test3(function(){
+                    document.write("welcome to hell");
+        })
+    })
+})
+    </script>
+</body>
+</html>
