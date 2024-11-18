@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b){
+            return (a+b);
+        }
+        function multiplication(a,b,callback){
+            let sum=callback(a,b);
+            document.write(sum);
+        }
+        //sum(7,3,multiplication)
+        multiplication(7,2,sum);
+    </script>
+</body>
+</html>
