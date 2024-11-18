@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(a,b,c){
+            document.write("f1 is executed...");
+            document.write(a+" "+b+" "+c);
+            return a+b+c;
+        }
+        var x= function(){
+            document.write("Function expression")
+        };
+
+        var result=f1(20,30,40);
+        document.write("<br>result:"+result)
+    </script>
+</body>
+</html>
