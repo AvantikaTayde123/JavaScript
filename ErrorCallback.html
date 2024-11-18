@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b,callback){
+            if (typeof (a)!="number"||typeof (b)!="number"){
+              callback(new Error("Invalid input"));
+
+            }
+            else{
+                let sum=a+b;
+                callback(null,sum);
+            }
+        }
+        function callsum(err,sum){
+            if(err){
+                document.write(err);
+            }
+            else{
+                document.write(sum);
+            }
+        }
+        sum(2,"a",callsum);
+    </script>
+</body>
+</html>
