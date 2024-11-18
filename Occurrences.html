@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function countCharOccurrences(str){
+        let ch = new Array(256).fill(0);
+
+        for(let i=0;i<str.length;i++){
+            ch[str.charCodeAt(i)]++;
+        }
+
+        for(let i=0;i<256;i++){
+            if(ch[i]>0){
+                console.log(String.fromCharCode(i)+" "+ch[i]);
+            }
+        }
+      }
+
+      const str="aabbcccaa";
+      countCharOccurrences(str);
+    </script>
+</body>
+</html>
