@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const op=(val)=>{
+        return new Promise((res,rej)=>{
+            throw new Error("Testing catch....");
+            val%2 ? rej("Given number is odd") : res("Given number is even");
+        });
+
+    }
+
+    op(11)
+    .then((resres)=>{
+        console.log(resres);
+    }).catch((rejres)=>{
+        console.log(rejres);
+    })
+</script>
+</body>
+</html>
