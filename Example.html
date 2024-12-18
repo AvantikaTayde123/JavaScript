@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sq(a){
+            return a*a;
+        }
+
+        function sum(a,b,callback){
+            let c=a+b;
+            let d= callback(c);
+            console.log(d);
+        }
+        sum(9,4,sq)
+    </script>
+</body>
+</html>
