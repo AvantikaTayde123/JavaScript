@@ -14,3 +14,6 @@ function sumGP(a, r, n) {
 let a = 2, r = 3, n = 5;
 printGP(a, r, n);
 console.log("Sum of GP Series: " + sumGP(a, r, n));
+
+// GP Series: 2 6 18 54 162
+// Sum of GP Series: 242
