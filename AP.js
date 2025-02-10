@@ -14,3 +14,6 @@ function sumAP(a, d, n) {
 let a = 2, d = 3, n = 5;
 printAP(a, d, n);
 console.log("Sum of AP Series: " + sumAP(a, d, n));
+
+// AP Series: 2 5 8 11 14
+// Sum of AP Series: 40
